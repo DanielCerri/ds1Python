@@ -74,18 +74,47 @@ os.system("cls")
 #ex4
 
 
-d = {}
+# d = {}
 
-nome = input("Digite seu nome: ")
-idade = input("Digite sua idade: ")
-telefone = input("Digite seu telefone: ")
-endereco = input("Digite seu endereço: ")
+# nome = input("Digite seu nome: ")
+# idade = input("Digite sua idade: ")
+# telefone = input("Digite seu telefone: ")
+# endereco = input("Digite seu endereço: ")
 
-d.update({"nome": nome, "idade": idade, "telefone":telefone, "end": endereco } )
+# d.update({"nome": nome, "idade": idade, "telefone":telefone, "end": endereco } )
 
-print(d)
+# print(d)
 
 
+
+#continuação dicionarios 
+
+print("INVESTIGAÇÃO CRIMINAL - RESPONDA COM SIM(S) OU NÃO(N) ")
+
+resultado = {
+        0:"inocente",
+        1:"inocente",
+        2:"Suspeito",
+        3:"Cumplice",
+        4:"Cumplice",
+        5:"assasino"
+}
+
+crime = {}
+
+crime["a"]=input("Telefonou para a vítima? ")
+crime["b"]=input("Esteve no local do crime? ")
+crime["c"]=input("Mora perto da vítima? ")
+crime["d"]=input("Devia para a vítima? ")
+crime["e"]=input("Já trabalhou com a vítima? ")
+
+
+contador = 0 
+for key,value in crime.items():
+    if value == "s":
+        contador+=1
+else:
+    print(resultado[contador])
 
 
 
